@@ -6,11 +6,11 @@ const ChatPage = () => {
   const [inputText, setInputText] = useState('');
   const [chatResponses, setChatResponses] = useState([]);
 
-  const handleInputChange = (e) => {
+  const handleInputChange = (e : any) => {
     setInputText(e.target.value);
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e : any) => {
     e.preventDefault();
 
    

@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 
 const ChatPage = () => {
   const [inputText, setInputText] = useState('');
-  const [chatResponses, setChatResponses] = useState([]);
+  const [chatResponses, setChatResponses] = useState<string[]>([]);
 
   const handleInputChange = (e : any) => {
     setInputText(e.target.value);
@@ -37,7 +37,7 @@ const ChatPage = () => {
 
   return (
    
-    <div style={{height:'100vh', margin: 'auto', padding_top :'0px', padding_left : '100px', textAlign: 'center', fontFamily: 'Astro Futuristic Font', color: '#41B3A3', backgroundColor: '#EAE7DC' }}>
+    <div style={{height:'100vh', margin: 'auto', paddingTop :'0px', textAlign: 'center', fontFamily: 'Astro Futuristic Font', color: '#41B3A3', backgroundColor: '#EAE7DC' }}>
       
       <h1 style={{ color: '#E85A4F' }}>NORA .AI</h1>
       <div
